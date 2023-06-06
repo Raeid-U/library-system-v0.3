@@ -42,4 +42,5 @@ function addNewBook(addBookForm) {
 
   // Display a confirmation message with the added book title
   alert(`The Book "${addBookForm.tilBookL.value}" has been added`);
+  window.location.href = "addBook.html"
 }
