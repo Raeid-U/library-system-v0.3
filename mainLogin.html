@@ -1,18 +1,28 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="mainLogin.css" />
   <head>
+    <!-- Meta tag for defining the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
     <title>North Park SLS</title>
   </head>
   <body>
+    <!-- Main block of content -->
     <div class="mainBlock">
-      <center><h1>North Park Student Library System</h1></center>
+      <!-- Heading centered in the page -->
       <center>
+        <h1>North Park Student Library System</h1>
+      </center>
+      <center>
+        <!-- Welcome message for the users -->
         <p>Welcome! Please select how you would like to Log in</p>
       </center>
 
       <center>
+        <!-- Image representing a book -->
         <img
           src="./imgs/mainLogin-Book.png"
           alt="bookpng"
@@ -21,12 +31,15 @@
         />
       </center>
 
-      <!--Directory of Buttons-->
+      <!-- Directory of buttons -->
       <br />
+
+      <!-- Button for logging in as a Technician -->
       <button class="tLoginBTN" onclick="window.location.href='techLogin.html'">
         Log in as a Technician
       </button>
 
+      <!-- Button for logging in as a Student -->
       <button class="sLoginBTN" onclick="window.location.href='studLogin.html'">
         Log in as a Student
       </button>

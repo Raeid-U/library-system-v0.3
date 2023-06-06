@@ -1,5 +1,7 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
 <html>
+  <!-- Linking an external CSS file -->
   <link rel="stylesheet" href="techlogin.css" />
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,6 +13,7 @@
     <center><h1>Technician Login</h1></center>
     <form>
       <div class="cont1">
+        <!-- Cancel button -->
         <button
           class="cancelBtn"
           onclick="window.location.href='mainLogin.html'"
@@ -18,6 +21,7 @@
           Cancel
         </button>
         <br /><br />
+        <!-- Technician ID input -->
         <label>Technician Id : </label>
         <input
           type="text"
@@ -28,6 +32,7 @@
         />
         <br />
         <br />
+        <!-- Password input -->
         <label>Password : </label>
         <input
           type="password"
@@ -37,8 +42,10 @@
           required
         />
         <br /><br />
+        <!-- Login button -->
         <button type="submit" class="subBtn">Login</button>
         <br />
+        <!-- Forgot password link -->
         <p>Forgot <a href="forgot.html">Password?</a></p>
       </div>
     </form>

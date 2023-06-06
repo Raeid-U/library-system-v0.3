@@ -1,23 +1,34 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="retBook.css" />
   <head>
+    <!-- Meta tag for defining the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
     <title>Return a Book</title>
+    <!-- Script tag for including the JavaScript file -->
     <script src="returnBook.js"></script>
   </head>
   <body>
-    <center><h1>Add Book Information for Return</h1></center>
+    <!-- Main block of content -->
+    <center>
+      <!-- Heading centered in the page -->
+      <h1>Add Book Information for Return</h1>
+    </center>
     <div class="rBook1">
+      <!-- Button for canceling and returning to the home page -->
       <button class="cancelBtn" onclick="window.location.href='tHome.html'">
         Cancel
       </button>
       <form class="rBook2" action="#">
+        <!-- Information message for the user -->
         <p>Please input the Book Number to proceed</p>
         <hr />
         <br />
-        <!--Start of Form-->
 
+        <!-- Start of the form -->
         <label for="numRBook">Book Number : </label>
         <input
           type="text"
@@ -31,7 +42,7 @@
           **Book Numbers are located on the Sticker and Stamped on the Cover
         </p>
 
-        <!--Submit Form-->
+        <!-- Submit button for returning the book -->
         <br />
         <button type="submit" class="subRBook" onclick="returnBook(this.form)">
           Return the Book

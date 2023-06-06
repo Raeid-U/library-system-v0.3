@@ -1,24 +1,29 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
-<link rel="stylesheet" href="studentSearch.css" />
 <html lang="en">
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="studentSearch.css" />
   <head>
     <title>Student Search Page</title>
     <script src="studentSearch.js"></script>
   </head>
   <body>
     <center><h1>Student Search Page</h1></center>
+    <!-- Main content container -->
     <div class="addBook1">
+      <!-- Cancel button -->
       <button class="cancelBtn" onclick="window.location.href='sHome.html'">
         Cancel
       </button>
       <form class="addBook2">
         <hr />
         <center>
+          <!-- Search instructions -->
           <p>Please input all known information for a more accurate search</p>
         </center>
         <hr />
         <br /><br />
-        <!--Start of Form-->
+        <!-- Start of Form -->
         <label for="tilBookS">Title : </label>
         <input type="text" placeholder="Title" name="tilBookS" id="tilBookS" />
 
@@ -35,12 +40,13 @@
         <br />
         <br />
         <label>Book Type : </label>
+        <!-- Checkboxes for book types -->
         <input
           type="checkbox"
           name="typBookS0"
-          id="Ficton"
-          value="Ficton"
-        />Ficton
+          id="Fiction"
+          value="Fiction"
+        />Fiction
         <input
           type="checkbox"
           name="typBookS1"
@@ -56,6 +62,7 @@
         <br />
         <br />
         <label for="pubBookS">Publication Date : </label>
+        <!-- Dropdown for publication date -->
         <select name="pubBookS" id="pubBookS">
           <option value="" selected="selected" disabled>Select One</option>
           <option value="Before 2000">Before 2000</option>
@@ -66,7 +73,7 @@
           <option value="2021-2023">2021-2023</option>
         </select>
 
-        <!--Submit Form-->
+        <!-- Submit Form -->
         <br /><br />
         <button
           type="submit"

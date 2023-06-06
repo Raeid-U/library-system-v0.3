@@ -1,5 +1,7 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="tHome.css" />
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +9,18 @@
     <script src="sHome.js"></script>
   </head>
   <body onload="loadID()">
+    <!-- Main content container -->
     <div class="directoryL">
       <center><h1>Student's Home Page</h1></center>
       <center>
+        <!-- Welcome message and logged-in user ID -->
         <p>Welcome! You are currently logged in as</p>
         <p id="sID"></p>
       </center>
 
-      <!--Directory of Buttons-->
+      <!-- Directory of Buttons -->
 
+      <!-- Button to search for books -->
       <button
         class="serBookBTN"
         onclick="window.location.href='studentSearch.html'"
@@ -23,7 +28,7 @@
         Search for Books
       </button>
 
-      <!--Log out button-->
+      <!-- Log out button -->
       <br /><br />
       <button class="logout" onclick="window.location.href='studLogin.html'">
         Log Out

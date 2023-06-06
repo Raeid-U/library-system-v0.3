@@ -54,14 +54,5 @@ if (results != ' '){
     document.getElementById("display1").innerHTML = 'No Search Results were Found'
 )
 
-
-    // document.getElementById("display1").innerHTML = (`Book Number: ${bookNumLib[i]} \nTitle: ${bookTitleLib[i]} \nAuthor: ${bookAuthorLib[i]} \nBook Type: ${bookTypeLib[i]} \nPublication Date: ${bookPubDateLib[i]}`);
-
-//If statement for search terms
-    // if(bookNumLib === bookNumStud || bookTitleLib === bookTitleStud || bookAuthorLib === bookAuthorStud || bookPubDateLib === bookPubDateStud || bookTypeLib === bookTypeStud0 || bookTypeLib === bookTypeStud1 || bookTypeLib === bookTypeStud2){
-    //     document.getElementById("display1").innerHTML = (`Book Number: ${bookNumLib} \nTitle: ${bookTitleLib} \nAuthor: ${bookAuthorLib} \nBook Type: ${bookTypeLib} \nPublication Date: ${bookPubDateLib}`);
-    // }else if (bookNumLib !== bookNumStud && bookTitleLib !== bookTitleStud && bookAuthorLib !== bookAuthorStud && bookPubDateLib !== bookPubDateStud && (bookTypeLib !== bookTypeStud0 && bookTypeLib !== bookTypeStud1 && bookTypeLib !== bookTypeStud2)){
-    //     document.getElementById("display2").innerHTML = (`No Search Terms Match`);
-    // } 
 }
 

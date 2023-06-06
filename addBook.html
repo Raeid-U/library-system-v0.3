@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <link rel="stylesheet" href="addBook.css" />
+  <!-- Linking an external CSS file -->
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add a Book Page</title>
     <script src="addBook.js"></script>
+    <!-- Linking an external JavaScript file -->
   </head>
+
   <body onload="refreshFunction()">
+    <!-- Calling the "refreshFunction()" when the page loads -->
     <center><h1>Add Book Information</h1></center>
+    <!-- Center-aligned heading -->
+
     <div class="addBook1">
+      <!-- A container div with class "addBook1" -->
+
       <button class="cancelBtn" onclick="window.location.href='tHome.html'">
         Cancel
       </button>
+      <!-- A button with class "cancelBtn" that redirects to "tHome.html" when clicked -->
       <form class="addBook2">
+        <!-- A form with class "addBook2" -->
+        <hr />
+        <center><p>Please input all the Book's information below</p></center>
+        <hr />
         <br /><br />
-        <!--Start of Form-->
+        <!-- Start of Form -->
+
         <label for="tilBookL">Title : </label>
+        <!-- Label for the input field -->
         <input
           type="text"
           placeholder="Title"
@@ -23,8 +39,10 @@
           id="tilBookL"
           required
         />
+        <!-- Input field for the book title with placeholder and required attribute -->
 
         <label for="autBookL">Author : </label>
+        <!-- Label for the input field -->
         <input
           type="text"
           placeholder="First Name, Last Name"
@@ -32,8 +50,10 @@
           id="autBookL"
           required
         />
+        <!-- Input field for the book author with placeholder and required attribute -->
 
         <label for="numBookL">Book Number : </label>
+        <!-- Label for the input field -->
         <input
           type="text"
           placeholder="###"
@@ -41,10 +61,13 @@
           id="numBookL"
           required
         />
+        <!-- Input field for the book number with placeholder and required attribute -->
 
         <br />
         <br />
+
         <label>Book Type : </label>
+        <!-- Label for the book type options -->
         <input
           type="radio"
           name="typBookL"
@@ -52,6 +75,7 @@
           value="Fiction"
           required
         />Ficton
+        <!-- Radio button for Fiction type -->
 
         <input
           type="radio"
@@ -60,6 +84,7 @@
           value="Non-Fiction"
           required
         />Non-Fiction
+        <!-- Radio button for Non-Fiction type -->
 
         <input
           type="radio"
@@ -68,12 +93,15 @@
           value="Graphic Novel"
           required
         />Graphic Novel
+        <!-- Radio button for Graphic Novel type -->
 
         <br />
         <br />
 
         <label for="pubBookL">Publication Date : </label>
+        <!-- Label for the select field -->
         <select name="pubBookL" id="pubBookL" required>
+          <!-- Select field for publication date with required attribute -->
           <option value="Before 2000">Before 2000</option>
           <option value="2001-2005">2001-2005</option>
           <option value="2006-2010">2006-2010</option>
@@ -83,10 +111,12 @@
         </select>
 
         <br /><br />
-        <!--Submit Form-->
+        <!-- Submit Form -->
+
         <button type="button" class="subBookL" onclick="addNewBook(this.form);">
           Add the Book
         </button>
+        <!-- Button to add the book, with class "subBookL" and onclick event to call "addNewBook(this.form)" function -->
       </form>
     </div>
   </body>

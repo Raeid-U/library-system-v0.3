@@ -1,24 +1,35 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="studLogin.css" />
+  <!-- Linking an external CSS file -->
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Student Login Page</title>
     <script src="studLogin.js"></script>
+    <!-- Linking an external JavaScript file -->
   </head>
 
   <body>
     <center><h1>Student Login</h1></center>
+    <!-- Center-aligned heading -->
+
     <form action="sHome.html">
+      <!-- Form with an action to submit the data to "sHome.html" -->
       <div class="cont1">
+        <!-- A container div with class "cont1" -->
+
         <button
           class="cancelBtn"
           onclick="window.location.href='mainLogin.html'"
         >
           Cancel
         </button>
+        <!-- A button with class "cancelBtn" that redirects to "mainLogin.html" when clicked -->
         <br /><br />
-        <label>Student Number : </label>
+
+        <label>Student Number :</label>
+        <!-- Label for the input field -->
         <input
           type="text"
           placeholder="ex. 709603"
@@ -26,9 +37,12 @@
           id="UsernameL"
           required
         />
+        <!-- Input field for the student number with placeholder and required attribute -->
         <br />
         <br />
-        <label>Password : </label>
+
+        <label>Password :</label>
+        <!-- Label for the password input field -->
         <input
           type="password"
           placeholder="********"
@@ -36,9 +50,14 @@
           id="PasswordL"
           required
         />
-        <br /><br />
+        <!-- Password input field with placeholder and required attribute -->
+        <br />
+        <br />
+
         <button type="submit" class="subBtn">Login</button>
+        <!-- Submit button with class "subBtn" -->
         <p>Forgot <a href="forgot.html">Password?</a></p>
+        <!-- A paragraph with a link to "forgot.html" -->
       </div>
     </form>
   </body>

@@ -1,14 +1,13 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="studentSearchResults.css" />
+  <!-- Link to the JavaScript file -->
   <script src="studentSearchResults.js"></script>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search Results</title>
-    <p>
-      These results are not updated in real-time. For current Info, please
-      refresh frequently
-    </p>
   </head>
   <!-- onload to load in the existing local storage items -->
   <body onload="displayResults();">
@@ -16,11 +15,18 @@
     <div class="sSR">
       <center>
         Search Results
+        <p>
+          These results are not updated in real-time. For current Info, please
+          refresh frequently
+        </p>
         <br />
         <br />
         <p>Search Results:</p>
-        <textarea name="display1" id="display1" cols="30" rows="50"></textarea>
-        <br /><button
+        <!-- Textarea to display search results -->
+        <textarea name="display1" id="display1" cols="45" rows="35"></textarea>
+        <br />
+        <!-- Return button -->
+        <button
           class="cancelBtn"
           onclick="window.location.href='studentSearch.html'"
         >
