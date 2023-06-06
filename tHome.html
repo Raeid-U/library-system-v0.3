@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="tHome.css" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Technician's Home Page</title>
+    <script src="tHome.js"></script>
+  </head>
+  <body onload="loadID()">
+    <div class="directoryL">
+      <center><h1>Library Technician's Home Page</h1></center>
+      <center>
+        <p>Welcome! You are currently logged in as</p>
+        <p id="lID"></p>
+      </center>
+
+      <!--Directory of Buttons-->
+      <button class="addBookBTN" onclick="window.location.href='addBook.html'">
+        Add a Book
+      </button>
+
+      <button
+        class="checkBookBTN"
+        onclick="window.location.href='checkBook.html'"
+      >
+        Check out a Book
+      </button>
+
+      <button class="rtnBookBTN" onclick="window.location.href='retBook.html'">
+        Return a Book
+      </button>
+
+      <button class="delBookBTN" onclick="window.location.href='delBook.html'">
+        Delete a Book
+      </button>
+
+      <!--Log out button-->
+      <br /><br />
+      <button class="logout" onclick="window.location.href='techLogin.html'">
+        Log Out
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="checkBook.css" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout a Book</title>
+    <script src="checkBook.js"></script>
+  </head>
+  <body>
+    <center><h1>Add Book Information for Checkout</h1></center>
+    <div class="cBook1">
+      <button class="cancelBtn" onclick="window.location.href='#'">
+        Cancel
+      </button>
+      <form class="cBook2" action="#">
+        <p>Please input the Book Number to proceed</p>
+        <hr />
+        <br />
+        <!--Start of Form-->
+
+        <label for="numCBook">Book Number : </label>
+        <input
+          type="text"
+          placeholder="Please Enter the Book Number Here"
+          name="numCBook"
+          id="numCBook"
+          required
+        />
+
+        <p>
+          **All books that are checked out have a duration of 20 days before
+          they are marked overdue
+        </p>
+
+        <!--Submit Form-->
+        <br />
+        <button
+          type="submit"
+          class="subCBook"
+          onclick="checkoutBook(this.form);"
+        >
+          Checkout the Book
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

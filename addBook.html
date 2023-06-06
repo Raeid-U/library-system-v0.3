@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="addBook.css" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Book Page</title>
+    <script src="addBook.js"></script>
+  </head>
+  <body onload="refreshFunction()">
+    <center><h1>Add Book Information</h1></center>
+    <div class="addBook1">
+      <button class="cancelBtn" onclick="window.location.href='tHome.html'">
+        Cancel
+      </button>
+      <form class="addBook2">
+        <br /><br />
+        <!--Start of Form-->
+        <label for="tilBookL">Title : </label>
+        <input
+          type="text"
+          placeholder="Title"
+          name="tilBookL"
+          id="tilBookL"
+          required
+        />
+
+        <label for="autBookL">Author : </label>
+        <input
+          type="text"
+          placeholder="First Name, Last Name"
+          name="autBookL"
+          id="autBookL"
+          required
+        />
+
+        <label for="numBookL">Book Number : </label>
+        <input
+          type="text"
+          placeholder="###"
+          name="numBookL"
+          id="numBookL"
+          required
+        />
+
+        <br />
+        <br />
+        <label>Book Type : </label>
+        <input
+          type="radio"
+          name="typBookL"
+          id="typFBookL"
+          value="Fiction"
+          required
+        />Ficton
+
+        <input
+          type="radio"
+          name="typBookL"
+          id="typNFBookL"
+          value="Non-Fiction"
+          required
+        />Non-Fiction
+
+        <input
+          type="radio"
+          name="typBookL"
+          id="typGBookL"
+          value="Graphic Novel"
+          required
+        />Graphic Novel
+
+        <br />
+        <br />
+
+        <label for="pubBookL">Publication Date : </label>
+        <select name="pubBookL" id="pubBookL" required>
+          <option value="Before 2000">Before 2000</option>
+          <option value="2001-2005">2001-2005</option>
+          <option value="2006-2010">2006-2010</option>
+          <option value="2011-2015">2011-2015</option>
+          <option value="2016-2020">2016-2020</option>
+          <option value="2021-2023">2021-2023</option>
+        </select>
+
+        <br /><br />
+        <!--Submit Form-->
+        <button type="button" class="subBookL" onclick="addNewBook(this.form);">
+          Add the Book
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

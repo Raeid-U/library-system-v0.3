@@ -1,0 +1,53 @@
+Body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: white;
+    }
+    
+    button { 
+    background-color: rgba(128, 128, 128, 0.755); 
+    width: 100%;
+    color: rgb(0, 0, 0); 
+    padding: 15px; 
+    margin: 10px 0px; 
+    border: none; 
+    cursor: pointer; 
+    } 
+    
+    .subBookS{
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    }
+    
+    form { 
+    margin-left: 350px;
+    margin-right: 350px;
+    border: 3px solid #f1f1f1; 
+    } 
+    
+    input[type=text], input[type=password] { 
+    width: 100%; 
+    margin: 8px 0;
+    padding: 12px 20px; 
+    display: inline-block; 
+    border: 2px solid black; 
+    box-sizing: border-box; 
+    }
+    
+    button:hover { 
+    transition: 500ms;
+    opacity: 0.7; 
+    } 
+    
+    .cancelBtn { 
+    margin-left: 350px;
+    width: auto; 
+    border-radius: 10px;
+    padding: 10px 18px;
+    }  
+    
+    .addBook2 { 
+    padding: 25px; 
+    background-color: lightblue;
+    } 
+    

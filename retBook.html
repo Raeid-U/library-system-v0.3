@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="retBook.css" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return a Book</title>
+    <script src="returnBook.js"></script>
+  </head>
+  <body>
+    <center><h1>Add Book Information for Return</h1></center>
+    <div class="rBook1">
+      <button class="cancelBtn" onclick="window.location.href='#'">
+        Cancel
+      </button>
+      <form class="rBook2" action="#">
+        <p>Please input the Book Number to proceed</p>
+        <hr />
+        <br />
+        <!--Start of Form-->
+
+        <label for="numRBook">Book Number : </label>
+        <input
+          type="text"
+          placeholder="Please Enter the Book Number Here"
+          name="numRBook"
+          id="numRBook"
+          required
+        />
+
+        <p>
+          **Book Numbers are located on the Sticker and Stamped on the Cover
+        </p>
+
+        <!--Submit Form-->
+        <br />
+        <button type="submit" class="subRBook" onclick="returnBook(this.form)">
+          Return the Book
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

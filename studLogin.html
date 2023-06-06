@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="studLogin.css" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Login Page</title>
+    <script src="studLogin.js"></script>
+  </head>
+
+  <body>
+    <center><h1>Student Login</h1></center>
+    <form action="sHome.html">
+      <div class="cont1">
+        <button
+          class="cancelBtn"
+          onclick="window.location.href='mainLogin.html'"
+        >
+          Cancel
+        </button>
+        <br /><br />
+        <label>Student Number : </label>
+        <input
+          type="text"
+          placeholder="ex. 709603"
+          name="UsernameL"
+          id="UsernameL"
+          required
+        />
+        <br />
+        <br />
+        <label>Password : </label>
+        <input
+          type="password"
+          placeholder="********"
+          name="PasswordL"
+          id="PasswordL"
+          required
+        />
+        <br /><br />
+        <button type="submit" class="subBtn">Login</button>
+        <br />
+        <input type="checkbox" checked="checked" /> Remember me
+        <p>Forgot <a href="forgot.html">Password?</a></p>
+      </div>
+    </form>
+  </body>
+</html>

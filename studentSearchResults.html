@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="studentSearchResults.css" />
+  <script src="studentSearchResults.js"></script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <p>
+      These results are not updated in real-time. For current Info, please
+      refresh frequently
+    </p>
+  </head>
+  <!-- onload to load in the existing local storage items -->
+  <body onload="displayResults();">
+    <center><h1>Search Results</h1></center>
+    <div class="sSR">
+      <center>
+        Search Results
+        <br />
+        <br />
+        <p>Search Results:</p>
+        <textarea name="display1" id="display1" cols="30" rows="50"></textarea>
+        <br /><button
+          class="cancelBtn"
+          onclick="window.location.href='studentSearch.html'"
+        >
+          Return
+        </button>
+      </center>
+    </div>
+  </body>
+</html>
