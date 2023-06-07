@@ -8,6 +8,14 @@ var libTechAvail = [];      // Array to store book availability
 
 // Function to refresh the book information from local storage
 function refreshFunction() {
+
+  libTechBookNum = [];    // Array to store book numbers
+  libTechTitle = [];      // Array to store book titles
+  libTechAuthor = [];     // Array to store book authors
+  libTechType = [];       // Array to store book types
+  libTechPubDate = [];    // Array to store publication dates
+  libTechAvail = [];      // Array to store book availability
+
   // Check if the local storage has the book information stored
   if (JSON.parse(localStorage.getItem("libTechBookNumKey")) != null) {
     // Retrieve book information from local storage and assign to the corresponding arrays
