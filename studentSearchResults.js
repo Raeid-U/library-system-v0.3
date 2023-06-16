@@ -50,6 +50,7 @@ for (i = 0; i < bookNumLib.length; i++){
 
 if (results != ''){
     document.getElementById("display1").innerHTML = results;
+    results = ' '
 } else (
     document.getElementById("display1").innerHTML = 'No Search Results were Found'
 )
